@@ -30,7 +30,7 @@ class BrainTumorDetector(nn.Module):
 model = BrainTumorDetector()
 
 # Load the state dictionary (assuming it is saved as 'model_state_dict.pth')
-state_dict = torch.load('C:/Users/USER/Desktop/Brain Tumor/brain-tumor-webapp/brain_tumor_detector.pt', map_location=torch.device('cpu'))
+state_dict = torch.load('./brain_tumor_detector.pt', map_location=torch.device('cpu'))
 
 # Update the model with the state dictionary
 model.load_state_dict(state_dict)
